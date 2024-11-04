@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:black;
+    margin: 0;
+    padding: 20px;
+}
+
+.privacidade-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(179, 6, 167, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #ed0bd6;
+}
+
+.privacidade-item {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #c30fd7;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #a3169c;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}

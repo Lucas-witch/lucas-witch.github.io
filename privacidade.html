@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações de Privacidade</title>
+    <link rel="stylesheet" href="privacidade.css">
+</head>
+<body>
+    <div class="privacidade-container">
+        <h1>Configurações de Privacidade</h1>
+        
+        <div class="privacidade-item">
+            <label for="email">Gmail:</label>
+            <input type="email" id="email" value="Dani.almeida01@gmail.com" readonly>
+        </div>
+
+        <div class="privacidade-item">
+            <label for="senha">Trocar Senha:</label>
+            <input type="password" id="senha" placeholder="Nova Senha">
+            <input type="password" id="confirmar-senha" placeholder="Confirmar Senha">
+            <button type="button" class="botao-trocar-senha">Trocar Senha</button>
+        </div>
+
+        <div class="privacidade-item">
+            <h2>Dados Pessoais</h2>
+            <p><strong>Nome:</strong>Daniela Almeida</p>
+            <p><strong>Data de Nascimento:</strong> 04/01/1996</p>
+            <p><strong>Endereço:</strong>Rua:Oscar freire,SP</p>
+        </div>
+
+        <div class="privacidade-item">
+            <h2>Preferências de Privacidade</h2>
+            <label>
+                <input type="checkbox" checked>
+                Receber notificações sobre atualizações de privacidade
+            </label>
+            <label>
+                <input type="checkbox">
+                Compartilhar dados com parceiros
+            </label>
+        </div>
+        
+        <button type="button" class="botao-salvar">Salvar Alterações</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações de Áudio</title>
+    <link rel="stylesheet" href="configuração de audio.css"> 
+</head>
+<body>
+    <div class="audio-container">
+        <h1>Configurações de Áudio</h1>
+
+        <div class="audio-item">
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" min="0" max="100" value="50">
+            <span id="volume-value">50</span>
+        </div>
+
+        <div class="audio-item">
+            <label for="fonte-audio">Selecione a Fonte de Áudio:</label>
+            <select id="fonte-audio">
+                <option value="audio1" selected>Fonte de Áudio 1</option>
+                <option value="audio2">Fonte de Áudio 2</option>
+                <option value="audio3">Fonte de Áudio 3</option>
+            </select>
+        </div>
+
+        <div class="audio-item">
+            <p>As alterações serão aplicadas imediatamente.</p>
+        </div>
+
+        <button type="button" class="botao-salvar">Salvar Alterações</button>
+    </div>
+
+    <script>
+        // Script para atualizar o valor do volume
+        const volumeSlider = document.getElementById('volume');
+        const volumeValue = document.getElementById('volume-value');
+
+        volumeSlider.addEventListener('input', () => {
+            volumeValue.textContent = volumeSlider.value;
+        });
+
+        // Script para salvar as configurações de áudio (exemplo simples)
+        const botaoSalvar = document.querySelector('.botao-salvar');
+
+        botaoSalvar.addEventListener('click', () => {
+            const volumeSelecionado = volumeSlider.value;
+            const fonteSelecionada = document.getElementById('fonte-audio').value;
+            alert(`Volume: ${volumeSelecionado}\nFonte de Áudio: ${fonteSelecionada}`);
+            // Aqui você pode implementar lógica para aplicar as configurações de áudio no site
+        });
+    </script>
+</body>
+</html>

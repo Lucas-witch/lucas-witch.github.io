@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações de Tema</title>
+    <link rel="stylesheet" href="tema.css">
+</head>
+<body>
+    <div class="tema-container">
+        <h1>Configurações de Tema</h1>
+
+        <div class="tema-item">
+            <label for="tema">Selecione o Tema:</label>
+            <select id="tema">
+                <option value="claro" selected>Tema Claro</option>
+                <option value="escuro">Tema Escuro</option>
+                <option value="sistema">Tema do Sistema</option>
+            </select>
+        </div>
+
+        <div class="tema-item">
+            <p>Escolha um tema para personalizar a aparência do site.</p>
+        </div>
+
+        <button type="button" class="botao-salvar">Salvar Alterações</button>
+    </div>
+
+    <script>
+        // Script para salvar as configurações de tema (exemplo simples)
+        const botaoSalvar = document.querySelector('.botao-salvar');
+        const temaSelect = document.getElementById('tema');
+
+        botaoSalvar.addEventListener('click', () => {
+            const temaSelecionado = temaSelect.value;
+            alert(`Tema selecionado: ${temaSelecionado}`);
+            // Aqui você pode implementar lógica para aplicar o tema no site
+        });
+    </script>
+</body>
+</html>

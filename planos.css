@@ -1,0 +1,66 @@
+ * {
+    background-color: black;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;
+}
+
+ul, li {
+    list-style-type: none;
+    justify-content: center;
+    padding: 1rem;
+    background-color: rgb(249, 11, 206);
+}
+
+li {
+    background-color: rgb(249, 11, 206);
+}
+
+a{
+    margin-left: 0px;
+    padding: 0px;
+    text-decoration: none;
+    background-color: rgb(249, 11, 206);
+}
+p:hover{
+    font-weight: bold;
+    color: #fff;
+}
+
+/** Estilos das categorias de publicação**/
+.categorias {
+    display: flex;
+    margin-bottom: 30px;
+    gap: 100px;/** Irá adicionar uma distância de 100px entre os planos **/
+    box-sizing: border-box;
+}
+
+.categoria {
+    background-color: rgb(249, 11, 206);
+    width: 300px;
+    height: 300px;
+}
+
+.plano_2 {
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(64, 7, 82);
+    background-color: rgb(249, 11, 206);
+}
+
+.valores {
+    font-size: 20px;
+    color: rgb(64, 7, 82);
+    background-color: rgb(249, 11, 206);
+}
+
+botton {
+    background-color: rgb(64, 7, 82);
+}
